@@ -3,7 +3,7 @@ import React from 'react'
 
 const Error = () => {
   return (
-    <div>Error</div>
+    <div>¡Lo Sentimos! No pudimos completar su solicitud. </div>
   )
 }
 

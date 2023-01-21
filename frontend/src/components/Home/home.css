@@ -1,0 +1,31 @@
+.logosection {
+    background: url(../img/background.jpeg) no-repeat center fixed;
+    height: 70vh;
+    background-size: cover;
+    max-width: 100%;
+    margin: 0;
+    padding-top: 40px;
+  }
+  
+  .bajada-header {
+    color: #ffffff;
+    font-size: 3vh;
+    font-weight: 100;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
+  .logo {
+    max-width: 40%;
+    
+  }
+  
+  
+  
+  .button-contacto{
+    color: #0086f6;
+    background-color:white;
+    border-color: white;
+    
+  }
+  

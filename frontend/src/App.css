@@ -5,6 +5,5 @@ min-height: 100vh;
 }
 
 main{
-  background-color: blue;
   flex: 1;
 }

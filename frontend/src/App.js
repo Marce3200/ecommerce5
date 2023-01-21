@@ -13,7 +13,9 @@ import Layout from './components/Layout';
 function App() {
   return (
     <Routes>
-      <Route path='/' element={<Home />} />
+      <Route path='/' element={<Layout/>}>
+
+      <Route index element={<Home />} />
       <Route path='/login' element={<Login />} />
       <Route path='/signup' element={<SignUp />} />
       <Route path='/product' element={<Product />} />
@@ -22,9 +24,7 @@ function App() {
       <Route path='/checkout' element={<CheckOut />} />
       <Route path='/error' element={<Error />} />
       
-      <Route path='/layout' element={< Layout/>} />
-
-
+      </Route>
 
     </Routes>
   );

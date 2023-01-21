@@ -1,13 +1,19 @@
 import React from 'react'
 import Footer from './Footer/Footer'
 import NavBar from './NavBar/NavBar'
+import "../App.css"
+import { Outlet } from 'react-router-dom'
 
-const Layout = () => {
+const Layout = (props) => {
   return (
-    <div>
+    <div className='contenedor'>
     <NavBar />
+<main>
+<Outlet />
+</main>
 
     <Footer />
+    
     </div>
   )
 }

@@ -10,6 +10,7 @@ import Error from './components/Error/Error';
 import Cart from './components/Cart/Cart';
 import Layout from './components/Layout';
 
+
 function App() {
   return (
     <Routes>
@@ -23,6 +24,7 @@ function App() {
       <Route path='/cart' element={<Cart />} />
       <Route path='/checkout' element={<CheckOut />} />
       <Route path='/*' element={<Error />} />
+
       </Route>
 
     </Routes>

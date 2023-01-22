@@ -34,6 +34,7 @@ const NavBar = () => {
           <Nav.Link eventKey={2} href="/cart">
             Carrito
           </Nav.Link>
+          
         </Nav>
       </Navbar.Collapse>
     </Container>

@@ -10,17 +10,16 @@ import logo from "../img/logo.png"
 const Home = () => {
   return (
     <Container fluid className="  p-0">
-      <Row className="logosection ">
+      <Row className="logosection">
       <center>
-        <Col className="text-center">
+        <Col>
         <img className="logo" src={logo} />
+        <div className="boxed">
           <p className="bajada-header">
             {" "}
-            _Future is Nerdy
+            Arma tu Set Up, con los mejores accesorios tecnológicos y el mejor servicio.
           </p>
-         
- 
-          
+          </div>
         </Col>
         </center>
       </Row>

@@ -31,16 +31,16 @@ const Login = () => {
             <Form className="form w-50">
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label className="text-form">Email address</Form.Label>
-                <Form.Control type="email" />
+                <Form.Control type="email" size="sm"/>
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Label className="text-form">Password</Form.Label>
-                <Form.Control type="password" />
+                <Form.Control type="password" size="sm"/>
               </Form.Group>
 
-              <Button className="boton-registro" type="submit">
-                Submit
+              <Button className="boton-registro" type="submit" size="sm">
+                Acceder
               </Button>
             </Form>
           </Col>

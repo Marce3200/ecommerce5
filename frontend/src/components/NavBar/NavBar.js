@@ -17,20 +17,20 @@ const NavBar = () => {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
          
-          <NavDropdown title="" id="collasible-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+          <NavDropdown  title="Catálogo" id="collasible-nav-dropdown">
+            <NavDropdown.Item  href="#action/3.1">Teclados</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">
-              Another action
+              Mouse
             </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.3">Cascos</NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item href="#action/3.4">
-              Separated link
+              Más Vendidos
             </NavDropdown.Item>
           </NavDropdown>
         </Nav>
         <Nav>
-          <Nav.Link href="/login">Login</Nav.Link>
+          <Nav.Link href="/login">Iniciar Sesión</Nav.Link>
           <Nav.Link eventKey={2} href="/cart">
             Carrito
           </Nav.Link>

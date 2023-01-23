@@ -15,14 +15,8 @@
     font-weight: 300;
     margin-top: 20px;
     
-    
-    
   }
-  .boxed {
-    border: 1px solid #75f200;
-    width: 60%;
-    padding: 10px;
-  }
+ 
 
   .logo {
     max-width: 40%;
@@ -30,34 +24,4 @@
     margin-bottom: 40px;
   }
   
-  .foto-catalogo {
-    height: 300px;
-    border-radius: 0px;
-    object-fit: cover;
-    
-  }
-
-  .card-catalogo{
-    border: 1px solid #75f200;
-    border-radius: 0;
-    background-color: #212529;
-    color: white;
-   
-  }
-
-  .card-text{
-    font-weight: 200;
-    font-size: x-small;
-    text-align: center;
-    
-  }
-  .card-tittle{
-    text-align: center;
-  }
-
-  .product-button{
-    margin: 10px;
-    background-color:  #75f200;
-    border: 1px solid #75f200;
-    color: #212529;
-  }
+  

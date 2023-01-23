@@ -18,13 +18,13 @@ const NavBar = () => {
         <Nav className="me-auto">
          
           <NavDropdown  title="Catálogo" id="collasible-nav-dropdown">
-            <NavDropdown.Item  href="#action/3.1">Teclados</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">
+            <NavDropdown.Item  href="/catalogo">Teclados</NavDropdown.Item>
+            <NavDropdown.Item href="/catalogo">
               Mouse
             </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Cascos</NavDropdown.Item>
+            <NavDropdown.Item href="/catalogo">Cascos</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">
+            <NavDropdown.Item href="/catalogo">
               Más Vendidos
             </NavDropdown.Item>
           </NavDropdown>

@@ -9,6 +9,7 @@ import CheckOut from './components/CheckOut/CheckOut';
 import Error from './components/Error/Error';
 import Cart from './components/Cart/Cart';
 import Layout from './components/Layout';
+import Catalogo from './components/Catalogo/Catalogo';
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
       <Route index element={<Home />} />
       <Route path='/login' element={<Login />} />
       <Route path='/signup' element={<SignUp />} />
-      <Route path='/product' element={<Product />} />
+      <Route path='/catalogo' element={<Catalogo />} />
       <Route path='/product' element={<Product />} />
       <Route path='/cart' element={<Cart />} />
       <Route path='/checkout' element={<CheckOut />} />

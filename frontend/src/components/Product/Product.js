@@ -1,10 +1,13 @@
 import React from 'react'
 import Container from 'react-bootstrap/esm/Container'
+
 import Row from 'react-bootstrap/esm/Row'
 import "../Product/product.css"
 import teclado1 from "../img/teclado1.jpg"
 import Col from 'react-bootstrap/esm/Col'
 import Button from 'react-bootstrap/esm/Button'
+import vistateclado1 from "../img/vistateclado1.jpg"
+import vistateclado2 from "../img/vistateclado2.jpg"
 
 const Product = () => {
   return (
@@ -14,7 +17,14 @@ const Product = () => {
         
         <Col lg={6} sm={12}>
         <img src={teclado1} className="imagen-principal"/>
-      
+      <Row>
+        <Col lg={6} md={6}>
+        <img src={vistateclado1} className="imagen-secundaria"/>
+        </Col>
+        <Col lg={6} md={6} >
+        <img src={vistateclado2} className="imagen-secundaria"/>
+        </Col>
+      </Row>
         </Col>
         <Col lg={6} sm={12}>
           
@@ -29,7 +39,7 @@ const Product = () => {
 
             <p className='precio'>$145.000</p>
 
-            <Button className="boton-comprar" type="submit" size="sm">
+            <Button className="boton-comprar" type="submit" size="sm" a href='/cart'>
                 Agregar al Carrito
               </Button>
           

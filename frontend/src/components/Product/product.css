@@ -1,8 +1,8 @@
 .imagen-principal{
     max-width: 100%;
     height: auto;
-
 }
+
 li{
     color: #ffffff;
     font-size: 13px;
@@ -22,7 +22,15 @@ li{
 .boton-comprar{
     
 margin-top: 30px;
+margin-bottom: 30px;
 background-color:  #75f200;
 border: 1px solid #75f200;
 color: #212529;
+}
+
+
+.imagen-secundaria{
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
 }

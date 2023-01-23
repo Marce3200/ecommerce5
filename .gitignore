@@ -1,0 +1,3 @@
+**/node_modules 
+#para que ignore las dos carpetas de node_modules
+.DS_Store

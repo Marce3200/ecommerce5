@@ -19,7 +19,7 @@ const Catalogo = () => {
         <img src={banner}/>
         <p className='titulo-seccion pt-5 pb-5'>Más Vendidos</p>
         </Row>
-        <Row>
+        <Row className='row-catalogo'>
           <Col sm={6} md={6} lg={3}>
             <Card className="card-catalogo" >
               <Card.Img variant="top" className="foto-catalogo" src={mouse1} />
@@ -30,7 +30,7 @@ const Catalogo = () => {
                   the bulk of the card's content.
                 </Card.Text>
                 <center>
-                  <Button size="sm" className="product-button">
+                  <Button size="sm" className="product-button" a href='/product'>
                     Ver Producto
                   </Button>
                 </center>
@@ -47,7 +47,7 @@ const Catalogo = () => {
                   the bulk of the card's content.
                 </Card.Text>
                 <center>
-                  <Button size="sm" className="product-button">
+                  <Button size="sm" className="product-button" a href='/product'>
                     Ver Producto
                   </Button>
                 </center>
@@ -68,7 +68,7 @@ const Catalogo = () => {
                   the bulk of the card's content.
                 </Card.Text>
                 <center>
-                  <Button size="sm" className="product-button">
+                  <Button size="sm" className="product-button" a href='/product'>
                     Ver Producto
                   </Button>
                 </center>
@@ -89,7 +89,7 @@ const Catalogo = () => {
                   the bulk of the card's content.
                 </Card.Text>
                 <center>
-                  <Button size="sm" className="product-button">
+                  <Button size="sm" className="product-button" a href='/product'>
                     Ver Producto
                   </Button>
                 </center>

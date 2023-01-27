@@ -29,16 +29,16 @@ const Footer = () => {
           
           <div  className="d-flex justify-content-center text-center text-light mb-2 redes">
                     <div>
-                        <i class="fa-brands fa-square-instagram me-2"></i>
+                        <i className="fa-brands fa-square-instagram me-2"></i>
                     </div>
                     <div>
-                        <i class="fa-brands fa-tiktok me-3"></i>
+                        <i className="fa-brands fa-tiktok me-3"></i>
                     </div>
                     <div>
-                        <i class="fa-brands fa-twitter me-3"></i>
+                        <i className="fa-brands fa-twitter me-3"></i>
                     </div>
                     <div>
-                        <i class="fa-brands fa-facebook-f me-3"></i>
+                        <i className="fa-brands fa-facebook-f me-3"></i>
                     </div>
                 </div>
                 

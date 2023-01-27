@@ -1,14 +1,17 @@
 const { default: mongoose } = require("mongoose");
 const crypto = require("crypto");
+const uniqueValidator = require("mongoose-unique-validator");
 
 const userSchema = mongoose.Schema({
   name: {
     type: String,
-    require: true
+    require: true,
+    uppercase: true,
   },
   username: {
     type: String,
     require: true,
+    unique: true,
   },
   password: {
     type: String,
@@ -20,6 +23,8 @@ const userSchema = mongoose.Schema({
   },
   salt: String, //para password
 });
+
+userSchema.plugin(uniqueValidator, { message: 'username is already registered' });
 
 userSchema.methods.hashPassword = function (password) { // encripta la contrase;a
   this.salt = crypto.randomBytes(16).toString("hex");// codigo aleatorio definido. Se agrega antes de hashear el password. Aunque 2 usuarios tengan el mismo pass, el salt es un extra que los diferencia.

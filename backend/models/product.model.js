@@ -9,7 +9,12 @@ const productSchema = mongoose.Schema({
     type: String,
     require: true,
   },
-  stock:{
+  status: {
+    type: String,
+    enum: ['Available', 'No Stock', 'Descontinuado']
+  },
+
+  stock:{ //revisar que no sea quantity
     type:Number,
     require: true,
     default: 0
@@ -21,7 +26,8 @@ const productSchema = mongoose.Schema({
 
   img:{
     type:String,
-    requiere:true
+    requiere:true,
+    default: "/public/images/productDefault.png" //crear imagen default
   }
 
 });

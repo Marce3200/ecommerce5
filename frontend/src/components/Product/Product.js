@@ -16,7 +16,7 @@ const Product = () => {
       <Row>
         
         <Col lg={6} sm={12}>
-        <img src={teclado1} className="imagen-principal"/>
+        <img src={teclado1} className="imagen-principal" />
       <Row>
         <Col lg={6} md={6}>
         <img src={vistateclado1} className="imagen-secundaria"/>

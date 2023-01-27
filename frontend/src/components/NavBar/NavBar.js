@@ -31,6 +31,7 @@ const NavBar = () => {
         </Nav>
         <Nav>
           <Nav.Link href="/login">Iniciar Sesión</Nav.Link>
+          <Nav.Link href="/perfil">Mi Perfil</Nav.Link>
           <Nav.Link eventKey={2} href="/cart">
             Carrito
           </Nav.Link>

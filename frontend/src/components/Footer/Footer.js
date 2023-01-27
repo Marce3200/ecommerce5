@@ -5,6 +5,7 @@ import "../Footer/footer.css";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
+import Button from "react-bootstrap/esm/Button";
 
 const Footer = () => {
   return (
@@ -41,6 +42,9 @@ const Footer = () => {
                         <i class="fa-brands fa-facebook-f me-3"></i>
                     </div>
                 </div>
+                <Button className="boton-comprar" type="submit" size="sm" a href='/addproduct'>
+                ruta add product
+              </Button>
                 
         </Col>
 

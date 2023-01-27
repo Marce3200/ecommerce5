@@ -10,6 +10,8 @@ import Error from './components/Error/Error';
 import Cart from './components/Cart/Cart';
 import Layout from './components/Layout';
 import Catalogo from './components/Catalogo/Catalogo';
+import Profile from './components/Profile/Profile';
+import AddProduct from './components/AddProduct/AddProduct';
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
       <Route path='/cart' element={<Cart />} />
       <Route path='/checkout' element={<CheckOut />} />
       <Route path='/*' element={<Error />} />
+      <Route path='/perfil' element={<Profile />} />
+      <Route path='/addproduct' element={<AddProduct />} />
 
       </Route>
 

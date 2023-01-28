@@ -71,4 +71,34 @@ const findOne = async (req, res) => {
   return res.json(Promise.resolve({ uno: "uno" }));
 };
 
-module.exports = { findAll, findOne, signup, signIn };
+const checkUser = async (req,res) => {
+  const username = jwt.extractSub(req);
+  try {
+    const filter = {
+      //crea filtro para buscar usuario en bd
+      username: req.body.username,
+      // password: req.body.password,
+      active: true,
+    };
+    const u = await user.findOne(filter);
+    if (u) {
+     
+      return res.json({
+        u
+      });
+    } else {
+      console.warn("intento de ingreso no autorizado");
+      return res.status(401).json({
+      //return resizeTo.status(401).json({
+        msg: "no autorizado",
+        details: "usuario no cuenta con autorización",
+      });
+    }
+  } catch (error) {
+    return res.json({
+    msg: "error en autenticacion",
+    details: error.message,
+    })
+  }
+}
+module.exports = { findAll, findOne, signup, signIn, checkUser };

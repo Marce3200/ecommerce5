@@ -5,7 +5,7 @@ import Container from "react-bootstrap/esm/Container";
 import Col from "react-bootstrap/esm/Col";
 import Row from "react-bootstrap/esm/Row";
 import mouse1 from "../img/mouse1.jpg";
-
+import Button from "react-bootstrap/esm/Button";
 const Cart = () => {
   return (
     <Container>
@@ -109,7 +109,11 @@ const Cart = () => {
           </Card.Body>
         </Card>
       </center>
+      <Button size="sm" className="product-button" a href='/product'>
+  comprar
+</Button>
     </Container>
+
   );
 };
 

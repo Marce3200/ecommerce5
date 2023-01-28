@@ -16,8 +16,13 @@ const Catalogo = () => {
     <Container fluid>
     <center>
         <Row>
+<<<<<<< HEAD
         <img src={banner}/>
         <p className='titulo-seccion pt-5 pb-5'>Los mejores</p>
+=======
+        <img src={banner} alt = ""/>
+        <p className='titulo-seccion pt-5 pb-5'>Más Vendidos</p>
+>>>>>>> b5e11c9 (comillas)
         </Row>
         <Row className='row-catalogo'>
           <Col sm={6} md={6} lg={3}>

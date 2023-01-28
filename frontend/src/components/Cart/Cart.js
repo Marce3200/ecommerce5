@@ -18,14 +18,14 @@ const Cart = () => {
               
 
               <Col lg={2}>
-                <p>Kone XP Air</p>
+                <p>Syn Max Air</p>
               </Col>
 
               <Col lg={2}>
                 <input
                   id="number"
                   type="number"
-                  value="42"
+                  value="1"
                   className="w-50 input-number"
                 />
               </Col>
@@ -56,7 +56,7 @@ const Cart = () => {
                 <input
                   id="number"
                   type="number"
-                  value="42"
+                  value="1"
                   className="w-50 input-number"
                 />
               </Col>
@@ -80,20 +80,20 @@ const Cart = () => {
               
 
               <Col lg={2}>
-                <p>Kone XP Air</p>
+                <p>Mic Torch</p>
               </Col>
 
               <Col lg={2}>
                 <input
                   id="number"
                   type="number"
-                  value="42"
+                  value="1"
                   className="w-50 input-number"
                 />
               </Col>
 
               <Col lg={2}>
-                <p className="texto-mini">$45.990</p>
+                <p className="texto-mini">$145.990</p>
               </Col>
               <Col lg={2}>
                 <p className="texto-mini">X</p>
@@ -107,9 +107,7 @@ const Cart = () => {
               </Button>
             
       </center>
-      <Button size="sm" className="product-button" a href='/checkout'>
-  comprar
-</Button>
+      
     </Container>
 
   );

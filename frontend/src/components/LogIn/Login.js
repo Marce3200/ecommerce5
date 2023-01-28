@@ -56,7 +56,7 @@ const Login = () => {
               
             </div>
             {alertaLogIn?
-            <p>usuario o password incorrecto</p>
+            <p className="text-incorrect">usuario o password incorrecto</p>
             :null}
             <Form className="form w-50" >
               <Form.Group className="mb-3" controlId="formBasicEmail">

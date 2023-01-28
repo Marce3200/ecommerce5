@@ -39,7 +39,7 @@ const {auth} = useAuth();
           {auth?<Nav.Link href="/perfil">Mi Perfil</Nav.Link>:null}{/* si hay algo en el token, que aparezca mi perfil */}
           
           <Nav.Link eventKey={2} href="/cart">
-            Carrito
+          <i class="fa-solid fa-cart-shopping"></i>
           </Nav.Link>
           
           {auth?<Nav.Link href="/logout">Cerrar sesión</Nav.Link>:null} {/* si hay algo en el token, que aparezca cerrar sesion */}

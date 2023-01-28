@@ -61,7 +61,7 @@ const SignUp = () => {
               
             </div>
             {alertaSignUp?
-            <p>Hubo un problema, por favor ingresa tus datos nuevamente</p>
+            <p className = "mensaje-error" >Hubo un problema, por favor ingresa tus datos nuevamente</p>
             :null}
             <Form className="form w-50">
             <Form.Group className="mb-2" controlId="formBasicEmail">

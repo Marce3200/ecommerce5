@@ -26,12 +26,12 @@
 .text-1{
     padding-bottom: 0px;
     margin-bottom: 0ch;
-    
+    font-size: medium;
 }
 
 .link{
     color: #75f200; 
-    font-size: x-small;
+    font-size: medium;
     font-weight: 200;
     margin-bottom: 20px;
 }
@@ -41,4 +41,15 @@
     background-color:  #75f200;
     border: 1px solid #75f200;
     color: #212529;
+}
+
+.mensaje-error{
+    color: white;
+    font-weight: 200;
+    font-size: medium;
+}
+
+.text-incorrect{
+    color: white;
+    margin-top: 20px;
 }

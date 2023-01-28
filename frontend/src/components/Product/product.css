@@ -3,9 +3,9 @@
     height: auto;
 }
 
-li{
-    color: #ffffff;
-    font-size: 13px;
+li-footer{
+    color: white;
+    font-size: medium;
     font-weight: 200;
 }
 
@@ -33,4 +33,9 @@ color: #212529;
     margin-top: 10px;
     max-width: 100%;
     height: auto;
+}
+.li-product{
+font-size: medium;
+font-weight: 300;
+color: white;
 }

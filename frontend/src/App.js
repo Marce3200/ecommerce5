@@ -12,6 +12,7 @@ import Layout from './components/Layout';
 import Catalogo from './components/Catalogo/Catalogo';
 import Profile from './components/Profile/Profile';
 import AddProduct from './components/AddProduct/AddProduct';
+import CerrarSesion from './components/Logout';
 
 
 function App() {
@@ -29,7 +30,8 @@ function App() {
       <Route path='/*' element={<Error />} />
       <Route path='/perfil' element={<Profile />} />
       <Route path='/addproduct' element={<AddProduct />} />
-
+      <Route path='/errorlogin' element={<Error />} />
+      <Route path='/logout' element={<CerrarSesion />} />
       </Route>
 
     </Routes>

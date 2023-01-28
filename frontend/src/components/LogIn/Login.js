@@ -8,21 +8,33 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import "../Signup/SignUp";
 import { signIn } from"../../services/user.service";
-import { useRef } from "react";
-
-
+import { useRef, useState} from "react";
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../services/AuthProvider";
 
 const Login = () => {
 
   const username = useRef(null);
   const password = useRef(null);
-
-  const onSubmit = () => {
+  const navigate = useNavigate();
+  const [alertaLogIn, setAlertaLogIn] = useState(false);
+  const {setAuth} = useAuth();
   
+  const onSubmit = async () => {
+  
+
     const u = username.current.value;
     const p = password.current.value;
+    
+    const loginConExito = await signIn(u, p);
+    if (loginConExito){
+      setAuth(true)
+      navigate("/perfil")
+    }else {setAlertaLogIn(true)
 
-    signIn(u, p);
+    }
+     
+
   };
 
   return (
@@ -43,7 +55,9 @@ const Login = () => {
                 </div>
               
             </div>
-
+            {alertaLogIn?
+            <p>usuario o password incorrecto</p>
+            :null}
             <Form className="form w-50" >
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label className="text-form">Username</Form.Label>

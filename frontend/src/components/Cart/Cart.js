@@ -107,7 +107,7 @@ const Cart = () => {
               </Button>
             
       </center>
-      <Button size="sm" className="product-button" a href='/product'>
+      <Button size="sm" className="product-button" a href='/checkout'>
   comprar
 </Button>
     </Container>

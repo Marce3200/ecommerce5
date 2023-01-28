@@ -1,15 +1,24 @@
 import axios from "axios";
+import { useAuth } from "./AuthProvider";
 
 
-const baseURL = process.env.REACT_APP_API
+
+
+const baseURL = process.env.REACT_APP_API_URL
 const signIn_API = async (username, password) => {
   const datos = {
     username: username,
     password: password
   };
+  try{
+    const result = await axios.post(`${baseURL}/user/signin`, datos);
+   return result;
+  }catch(error){
+    return(false);
+
   
-  const result = await axios.post(`${baseURL}/user/signin`, datos);
-  return result;
+  }
+  
 }
 
 const saveToken = async (token) => {
@@ -22,6 +31,7 @@ const readToken = async () => {
 }
 
 const signIn = async (username, password) => {
+ 
 
   const result = await signIn_API(username, password);
  
@@ -32,5 +42,46 @@ const signIn = async (username, password) => {
   }
   return false;
 }
+const signUp_API = async (name, username, password) => {
+  const datos = {
+    name:name,
+    username: username,
+    password: password
+  };
+  try{
+    const result = await axios.post(`${baseURL}/user/signup`, datos);
+   return result;
+  }catch(error){
+    return(false);
 
-export { signIn, readToken };
+  
+  }
+  
+}
+const registroUsuario = async (name, username, password1, password2) => {
+
+  if(!name || !username || !password1 || !password2){
+    return(false);
+  }
+
+  if(password1 !== password2){
+
+    return(false);
+  }
+   const result = await signUp_API(name, username, password1);
+ 
+  if (result) {
+   
+    
+    return true;
+  }
+  return false;
+
+}
+
+const logout = async () => {
+  localStorage.removeItem("token");
+}
+
+
+export { signIn, readToken, registroUsuario, logout};

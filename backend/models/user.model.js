@@ -21,6 +21,8 @@ const userSchema = mongoose.Schema({
     type: Boolean,
     default: true,
   },
+
+  
   salt: String, //para password
 });
 

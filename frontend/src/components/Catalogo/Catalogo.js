@@ -17,7 +17,7 @@ const Catalogo = () => {
     <center>
         <Row>
         <img src={banner}/>
-        <p className='titulo-seccion pt-5 pb-5'>Más Vendidos</p>
+        <p className='titulo-seccion pt-5 pb-5'>Los mejores</p>
         </Row>
         <Row className='row-catalogo'>
           <Col sm={6} md={6} lg={3}>

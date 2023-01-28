@@ -2,8 +2,9 @@ import { PayPalScriptProvider,PayPalButtons, usePayPalScriptReducer,} from "@pay
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect, useState } from "react";
-
-
+import Container from "react-bootstrap/esm/Container";
+import Col from "react-bootstrap/esm/Col";
+import "../CheckOut/checkout.css"
 
 const CheckOut = () => {
   const [show, setShow] = useState(false);
@@ -53,14 +54,20 @@ const onError = (data, actions) => {
      }}
    >
     
-    <div>
-
+    <Container>
+      <Col>
+<center>
+<p className='titulo-seccion-pago pt-5 pb-5'>Seleccione su método de pago</p>
     <PayPalButtons
            style={{ layout: "vertical" }}
            createOrder={createOrder}
            onApprove={onApprove}
+           className="botones-pago"
          />
-    </div>
+         </center>
+         </Col>
+    </Container>
+    
    </PayPalScriptProvider>
     
   )

@@ -18,8 +18,8 @@ const Footer = () => {
         <Col sm={12} md={4} lg={4} className="mt-2 mb-1">
           <p className="titulo-footer">Contacto</p>
           <ul className="list-unstyled">
-            <li><i className="fa-brands fa-whatsapp"> </i> +569 96854511</li>
-            <li><i className="fa-regular fa-paper-plane"></i>  contacto@wegeek.cl</li>
+            <li className="li-footer"><i className="fa-brands fa-whatsapp"> </i> +569 96854511</li>
+            <li className="li-footer" ><i className="fa-regular fa-paper-plane"></i>  contacto@wegeek.cl</li>
             
             
           </ul>
@@ -52,7 +52,7 @@ const Footer = () => {
         <hr className="hr" />
         <Row>
           <p className="texto-derechos col-sm">
-            &copy;2023 @coding4u.cl | Todos los derechos reservados
+            &copy;2023 MarceDev & Antoniaarga | Todos los derechos reservados
           </p>
         </Row>
       

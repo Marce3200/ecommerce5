@@ -56,7 +56,7 @@ const Login = () => {
               
             </div>
             {alertaLogIn?
-            <p>usuario o password incorrecto</p>
+            <p className="text-incorrect">usuario o password incorrecto</p>
             :null}
             <Form className="form w-50" >
               <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -69,7 +69,7 @@ const Login = () => {
                 <Form.Control type="password" ref = {password} size="sm"/>
               </Form.Group>
 
-              <Button className="boton-registro"  onClick = {onSubmit} size="sm">
+              <Button className="boton-comprar"  onClick = {onSubmit} size="sm">
                 Acceder
               </Button>
             </Form>

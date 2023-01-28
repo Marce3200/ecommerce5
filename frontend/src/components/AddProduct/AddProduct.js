@@ -15,32 +15,32 @@ const AddProduct = () => {
 <img className="logo-login" src={logo} />
 <form className='w-50'>
 <Form.Group className="mb-3">
-        <Form.Label>Nombre</Form.Label>
+        <Form.Label className='text-add'>Nombre</Form.Label>
         <Form.Control   />
       </Form.Group>
 
       <Form.Group className="mb-3">
-        <Form.Label>Descripción</Form.Label>
+        <Form.Label className='text-add'>Descripción</Form.Label>
         <Form.Control   />
       </Form.Group>
 
       <Form.Group className="mb-3">
-        <Form.Label>Stock</Form.Label>
+        <Form.Label className='text-add'>Stock</Form.Label>
         <Form.Control   />
       </Form.Group>
 
       <Form.Group className="mb-3">
-        <Form.Label>Status</Form.Label>
+        <Form.Label className='text-add'>Status</Form.Label>
         <Form.Control   />
       </Form.Group>
 
       <Form.Group className="mb-3">
-        <Form.Label>Precio</Form.Label>
+        <Form.Label className='text-add'>Precio</Form.Label>
         <Form.Control   />
       </Form.Group>
 
       <Form.Group className="mb-3">
-        <Form.Label>URL imagen</Form.Label>
+        <Form.Label className='text-add'>URL imagen</Form.Label>
         <Form.Control   />
       </Form.Group>
       </form>

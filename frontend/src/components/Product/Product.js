@@ -30,12 +30,12 @@ const Product = () => {
           
           <p className='text-infor-product'>Magma Mini</p>
           
-            <li>Mini 60% form factor frees up space on your desktop</li>
-            <li>5-Zone AIMO RGB Lighting with translucent top plate</li>
-            <li>Durable IP33 rating protects from accidental spills</li>
-            <li>Quiet, fast, and responsive membrane keys</li>
-            <li>Easy-Shift[+] button duplicator enables function layers</li>
-            <li>Left side mounted cable</li>
+            <li className='li-product'>Mini 60% form factor frees up space on your desktop</li>
+            <li className='li-product'>5-Zone AIMO RGB Lighting with translucent top plate</li>
+            <li className='li-product'>Durable IP33 rating protects from accidental spills</li>
+            <li className='li-product'>Quiet, fast, and responsive membrane keys</li>
+            <li className='li-product'>Easy-Shift[+] button duplicator enables function layers</li>
+            <li className='li-product'>Left side mounted cable</li>
 
             <p className='precio'>$145.000</p>
 

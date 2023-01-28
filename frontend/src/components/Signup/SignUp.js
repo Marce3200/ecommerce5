@@ -61,7 +61,7 @@ const SignUp = () => {
               
             </div>
             {alertaSignUp?
-            <p>Hubo un problema, por favor ingresa tus datos nuevamente</p>
+            <p className="mensaje-error">Hubo un problema, por favor ingresa tus datos nuevamente</p>
             :null}
             <Form className="form w-50">
             <Form.Group className="mb-2" controlId="formBasicEmail">
@@ -83,7 +83,7 @@ const SignUp = () => {
                 <Form.Control type="password" size="sm" ref = {password2}/>
               </Form.Group>
 
-              <Button className="boton-registro" onClick = {onSubmit} size="sm">
+              <Button className="boton-comprar" onClick = {onSubmit} size="sm">
                 Crear Cuenta
               </Button>
             </Form>

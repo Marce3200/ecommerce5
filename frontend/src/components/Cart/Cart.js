@@ -5,6 +5,7 @@ import Container from "react-bootstrap/esm/Container";
 import Col from "react-bootstrap/esm/Col";
 import Row from "react-bootstrap/esm/Row";
 import mouse1 from "../img/mouse1.jpg";
+import Button from "react-bootstrap/esm/Button";
 
 const Cart = () => {
   return (
@@ -16,9 +17,7 @@ const Cart = () => {
         >
           <Card.Body>
             <Row className="align-items-center">
-              <Col lg={3}>
-                <img className="foto-carrito" src={mouse1} />
-              </Col>
+              
 
               <Col lg={2}>
                 <p>Kone XP Air</p>
@@ -49,9 +48,7 @@ const Cart = () => {
         >
           <Card.Body>
             <Row className="align-items-center">
-              <Col lg={3}>
-                <img className="foto-carrito" src={mouse1} />
-              </Col>
+             
 
               <Col lg={2}>
                 <p>Kone XP Air</p>
@@ -82,9 +79,7 @@ const Cart = () => {
         >
           <Card.Body>
             <Row className="align-items-center">
-              <Col lg={3}>
-                <img className="foto-carrito" src={mouse1} />
-              </Col>
+              
 
               <Col lg={2}>
                 <p>Kone XP Air</p>
@@ -108,6 +103,11 @@ const Cart = () => {
             </Row>
           </Card.Body>
         </Card>
+
+        <Button className="boton-comprar" type="submit" size="sm" a href='/checkout'>
+                Proceder al pago
+              </Button>
+            
       </center>
     </Container>
   );

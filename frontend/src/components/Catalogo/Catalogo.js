@@ -21,8 +21,8 @@ const Catalogo = () => {
     <Container fluid>
     <center>
         <Row>
-<<<<<<< HEAD
-<<<<<<< HEAD
+
+
         <img src={banner}/>
         <p className='titulo-seccion pt-5'>Productos más vendidos</p>
         </Row>

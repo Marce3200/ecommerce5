@@ -30,7 +30,7 @@ const Product = () => {
        </Col>
        <Col lg={6} sm={12}>
         
-<<<<<<< HEAD
+
         <Col lg={6} sm={12}>
         <img src={teclado1} className="imagen-principal" />
       <Row>
@@ -60,27 +60,8 @@ const Product = () => {
               </Button>
           
         </Col>
-=======
-         <p className='text-infor-product'>Magma Mini</p>
->>>>>>> 4dcfb7da9e6fa57661ac3e9b787d58e91e27649e
-        
-           <li className='li-product'>Mini 60% form factor frees up space on your desktop</li>
-           <li className='li-product'>5-Zone AIMO RGB Lighting with translucent top plate</li>
-           <li className='li-product'>Durable IP33 rating protects from accidental spills</li>
-           <li className='li-product'>Quiet, fast, and responsive membrane keys</li>
-           <li className='li-product'>Easy-Shift[+] button duplicator enables function layers</li>
-           <li className='li-product'>Left side mounted cable</li>
 
-
-           <p className='precio'>$145.000</p>
-
-
-           <Button className="boton-comprar" type="submit" size="sm" a href='/cart'>
-               Agregar al Carrito
-             </Button>
-        
-       </Col>
-      
+      </Col>
      </Row>
      </center>
    </Container>

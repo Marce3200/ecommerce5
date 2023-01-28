@@ -5,6 +5,7 @@ import "../AddProduct/addproduct.css";
 import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
 import logo from "../img/logo.png"
+import Button from 'react-bootstrap/esm/Button';
 
 
 const AddProduct = () => {
@@ -18,7 +19,7 @@ const AddProduct = () => {
 <Form.Group className="mb-3">
        <Form.Label className='text-add'>Nombre</Form.Label>
        <Form.Control   />
-     </Form.Group>
+     
 
         <Form.Label className='text-add'>Nombre</Form.Label>
         <Form.Control   />
@@ -54,6 +55,9 @@ const AddProduct = () => {
      </Form.Group>
      </form>
     
+     <Button className="boton-comprar" type="submit" size="sm" href='/addproduct'>
+               agregar producto
+             </Button>
      </Col>
      </center>
 

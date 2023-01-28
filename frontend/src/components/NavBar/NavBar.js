@@ -1,13 +1,4 @@
-import React from 'react'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import "../NavBar/navbar.css"
-import { readToken } from"../../services/user.service";
-import minilogo from "../img/minilogo.png"
-import "../NavBar/navbar.css"
-import { useState } from 'react';
-import { useAuth } from '../../services/AuthProvider';
+
 
 
 import React from "react";
@@ -18,7 +9,6 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import "../NavBar/navbar.css";
 import minilogo from "../img/minilogo.png";
 import "../NavBar/navbar.css";
-import { useState } from "react";
 import { useAuth } from "../../services/AuthProvider";
 import { logout } from "../../services/user.service";
 import { useNavigate } from "react-router-dom";
@@ -62,3 +52,5 @@ const NavBar = () => {
   </Navbar>
   )
 }
+
+export default NavBar

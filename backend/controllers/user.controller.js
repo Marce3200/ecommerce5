@@ -73,10 +73,11 @@ const findOne = async (req, res) => {
 
 const checkUser = async (req,res) => {
   const username = jwt.extractSub(req);
+  console.log("usuario:" + username)
   try {
     const filter = {
       //crea filtro para buscar usuario en bd
-      username: req.body.username,
+      username: username,
       // password: req.body.password,
       active: true,
     };

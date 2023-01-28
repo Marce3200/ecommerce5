@@ -44,7 +44,7 @@ const Footer = () => {
                        <i className="fa-brands fa-facebook-f me-3"></i>
                    </div>
                </div>
-               <Button className="boton-comprar" type="submit" size="sm" a href='/addproduct'>
+               <Button className="boton-comprar" type="submit" size="sm" href='/addproduct'>
                ruta add product
              </Button>
               

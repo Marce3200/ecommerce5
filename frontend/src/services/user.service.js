@@ -1,5 +1,4 @@
 import axios from "axios";
-import { useAuth } from "./AuthProvider";
 
 const baseURL = process.env.REACT_APP_API_URL;
 const signIn_API = async (username, password) => {
@@ -16,6 +15,7 @@ const signIn_API = async (username, password) => {
 };
 
 const saveToken = async (token) => {
+  console.log("toeknlogin "+ token )
   localStorage.setItem("token", token);
   console.log(await readToken());
 };
@@ -39,7 +39,9 @@ const signUp_API = async (name, username, password) => {
     password: password,
   };
   try {
-    const result = await axios.post(`${baseURL}/user/signup`, datos);
+    const result = await axios.post(`${baseURL}/user/signup`, datos, {
+    withCredentials: true,
+    });
     return result;
   } catch (error) {
     return false;
@@ -63,6 +65,7 @@ const registroUsuario = async (name, username, password1, password2) => {
 
 const logout = async () => {
   localStorage.removeItem("token");
+  console.log("saliendo")
 };
 
 export { signIn, readToken, registroUsuario, logout };

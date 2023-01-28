@@ -3,9 +3,9 @@ const { expressjwt: jwt} = require("express-jwt") //esa libreria le permite a ex
 require("dotenv").config();
 
 const getToken = (req) =>{ //este metodo extrae el token de la cabecera
-     let {authorisation} = req.headers;
-     if (authorisation) {
-        let [type, token] = authorisation.split(" "); // extrae los datos de la cadena y los divide en dos
+     let {authorization} = req.headers;
+     if (authorization) {
+        let [type, token] = authorization.split(" "); // extrae los datos de la cadena y los divide en dos
         return (type === 'Token' || type === "Bearer") ? token : null; // si el type es token o bearer devuelve algo.
      }
      return null;

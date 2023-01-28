@@ -6,6 +6,7 @@ const AuthContext = createContext({//creo contexto useContext
   auth: null,
   setAuth: () => {},
   user: null,
+  setUser:() =>{}
 });
 
 export const useAuth = () => useContext(AuthContext);
@@ -17,13 +18,21 @@ const AuthProvider = ({ children }) => {//uso contexto
   useEffect(() => {
     const isAuth = async () => {
         const baseURL = process.env.REACT_APP_API_URL
+     
       try {
+        const axiosConfig ={
+            headers:{
+                authorization:"Bearer "+ localStorage.getItem("token")
+            }, withCredentials: true,
+
+        }
         const res = await axios.get(
             `${baseURL}/user/logged-user`,
-          { withCredentials: true }
+          axiosConfig
         );
-      
-        setUser(res.data);
+     
+        setUser(res.data.u);
+        setAuth(true)
       } catch(error) {
         setUser(null);
       };
@@ -33,7 +42,7 @@ const AuthProvider = ({ children }) => {//uso contexto
   }, [auth]);
 
   return (
-    <AuthContext.Provider value={{ auth, setAuth, user }}>
+    <AuthContext.Provider value={{ auth, setAuth, user, setUser}}>
       {children}
     </AuthContext.Provider>
   );

@@ -7,15 +7,15 @@ import { useAuth } from '../services/AuthProvider'
 
   
 const CerrarSesion = () => {
-    const navigate = useNavigate();
-    const {setAuth} = useAuth();
+    // const navigate = useNavigate();
+    // const {setAuth} = useAuth();
 
-    logout();
-    setAuth(false)
-    useEffect(()=>{
+    // logout();
+    // setAuth(false)
+    // useEffect(()=>{
         
-        navigate("/")
-    })
+    //     navigate("/")
+    // })
    
   return (
     <div>Logout</div>

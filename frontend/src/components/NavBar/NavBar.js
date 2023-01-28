@@ -10,9 +10,28 @@ import { useState } from 'react';
 import { useAuth } from '../../services/AuthProvider';
 
 
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import "../NavBar/navbar.css";
+import minilogo from "../img/minilogo.png";
+import "../NavBar/navbar.css";
+import { useState } from "react";
+import { useAuth } from "../../services/AuthProvider";
+import { logout } from "../../services/user.service";
+import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
-const {auth} = useAuth();
+  const { auth, setAuth } = useAuth();
+  const navigate = useNavigate();
+  const onLogout = () => {
+    logout();
+    setAuth(false);
+
+    navigate("/");
+  };
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
     <Container>
@@ -43,5 +62,3 @@ const {auth} = useAuth();
   </Navbar>
   )
 }
-
-export default NavBar

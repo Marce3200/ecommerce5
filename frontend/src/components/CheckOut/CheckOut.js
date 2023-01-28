@@ -7,44 +7,45 @@ import Col from "react-bootstrap/esm/Col";
 import "../CheckOut/checkout.css"
 
 const CheckOut = () => {
-  const [show, setShow] = useState(false);
-  const [success, setSuccess] = useState(false);
-  const [ErrorMessage, setErrorMessage] = useState("");
-  const [orderID, setOrderID] = useState(false);
+ const [show, setShow] = useState(false);
+ const [success, setSuccess] = useState(false);
+ const [ErrorMessage, setErrorMessage] = useState("");
+ const [orderID, setOrderID] = useState(false);
+
 
 // creates a paypal order
 const createOrder = (data, actions) => {
-  return actions.order
-    .create({
-      purchase_units: [//con info del backend
-        {
-          description: "Sunflower",
-          amount: {
-            currency_code: "USD",
-            value: 20,
-          },
-        },
-      ],
-      // not needed if a shipping address is actually needed
-      application_context: {
-        shipping_preference: "NO_SHIPPING",
-      },
-    })
-    .then((orderID) => {
-      setOrderID(orderID);//usa el useState para guardar el id de la orden
-      return orderID;
-    });
+ return actions.order
+   .create({
+     purchase_units: [//con info del backend
+       {
+         description: "Sunflower",
+         amount: {
+           currency_code: "USD",
+           value: 20,
+         },
+       },
+     ],
+     // not needed if a shipping address is actually needed
+     application_context: {
+       shipping_preference: "NO_SHIPPING",
+     },
+   })
+   .then((orderID) => {
+     setOrderID(orderID);//usa el useState para guardar el id de la orden
+     return orderID;
+   });
 };
 // check Approval
 const onApprove = (data, actions) => {
-  return actions.order.capture().then(function (details) {
-    const { payer } = details;
-    setSuccess(true);
-  });
+ return actions.order.capture().then(function (details) {
+   const { payer } = details;
+   setSuccess(true);
+ });
 };
 //capture likely error
 const onError = (data, actions) => {
-  setErrorMessage("An Error occured with your payment ");
+ setErrorMessage("An Error occured with your payment ");
 };
 //dentro del div del return, Anto, amononalo. 
   return (
@@ -73,4 +74,6 @@ const onError = (data, actions) => {
   )
 }
 
+
 export default CheckOut
+
